@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ParticlesBg from 'particles-bg';
+import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import About from './components/About';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Socials from './components/Socials';
+import Scroll from './components/Scroll';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <ParticlesBg color="#ff0000" type="cobweb" bg={true} />
+      <Navbar />
+      <Intro />
+      <About />
+      <Projects />
+      <Resume />
+      <Scroll />
+      <Socials />
     </div>
   );
 }
